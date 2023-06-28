@@ -92,20 +92,28 @@ nav ul {
   text-decoration: none;
 }
 
+.nav-item a span {
+  display: none;
+}
+
 .nav-item:hover {
   transition: all 0.5s ease;
   background-color: rgba(79, 163, 182, 0.5);
 }
 
+/* main */
 main {
   width: 85%;
   margin: 5vh 0vh 10vh 0vh;
 }
 
+hr {
+  display: none;
+}
+
 /* forecast */
 
 .forecast {
-  display: inline-block;
   width: 75%;
 }
 
@@ -312,4 +320,43 @@ footer small {
   font-family: "Nosifer", cursive;
   color: var(--white);
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  hr {
+    display: block;
+    margin-bottom: 10vh;
+    border: none;
+    height: 50vh;
+    width: 100%;
+    background-image: url(./img/beach-1852945_1920.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav-item a {
+    text-transform: uppercase;
+  }
+
+  .nav-item a span {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  .forecast {
+    min-height: 100%;
+  }
+
+  #forecasts {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: calc(95% - 1.5em);
+  }
+
+  .forecast-item:nth-child(10n),
+  .forecast-item:nth-child(9n) {
+    display: block;
+  }
 }
