@@ -26,22 +26,19 @@ body {
   align-items: center;
 }
 
+/* header */
 header {
-  height: 100px;
   width: 100%;
-  background-color: var(--blue);
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--blue);
 }
 
-header a {
+header > a {
   position: absolute;
-  left: 5%;
-  top: 50%;
+  left: 2.5%;
+  top: 6%;
   height: 50%;
-  transform: translate(0%, -50%);
+  transform: translate(0%, 0%);
   width: fit-content;
   color: var(--darkness-white);
 }
@@ -58,9 +55,12 @@ header a img {
 header h1 {
   font-family: "Nosifer", cursive;
   color: var(--white);
-  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 2% 0%;
 }
 
+/* nav */
 nav {
   height: 50px;
   width: 100%;
@@ -75,18 +75,24 @@ nav ul {
   padding: 0% 2%;
   height: 100%;
   color: var(--darkness-white);
+  list-style: none;
 }
 
-nav ul li {
+.nav-item {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  list-style: none;
+  text-decoration: none;
 }
 
-nav ul li:hover {
+.nav-item:hover {
   transition: all 0.5s ease;
   background-color: rgba(79, 163, 182, 0.5);
 }
@@ -96,10 +102,11 @@ main {
   margin: 5vh 0vh 10vh 0vh;
 }
 
+/* forecast */
+
 .forecast {
   display: inline-block;
   width: 75%;
-  height: 100%;
 }
 
 .forecast h2 {
@@ -166,16 +173,16 @@ main {
   transform: translate(2px, -2px);
 }
 
-.forecast-item:nth-child(8n),
+.forecast-item:nth-child(10n),
 .forecast-item:nth-child(9n) {
   display: none;
 }
 
+/* aside */
+
 aside {
   vertical-align: top;
-  display: inline-block;
-  width: 20%;
-  min-height: 100vh;
+  width: 25%;
   background-color: var(--darkness-white);
   border-radius: 10px;
   box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
@@ -207,4 +214,102 @@ aside ul {
 .aside-item a i {
   margin-right: 2%;
   color: var(--blue);
+}
+
+/* gallery */
+
+.gallery {
+  display: grid;
+  width: 50%;
+  gap: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  width: 50%;
+  background-color: var(--darkness-white);
+  border-radius: 10px;
+  color: var(--cyan);
+}
+
+form h2::first-letter {
+  text-transform: uppercase;
+}
+
+form h2 {
+  margin: 5% 0%;
+}
+
+form p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0%;
+  font-weight: bold;
+}
+
+form p span:nth-child(1)::first-letter {
+  text-transform: uppercase;
+}
+
+form input[type="email"] {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+  padding: 3%;
+  outline: none;
+}
+
+form input[type="email"]::placeholder {
+  font-family: "Quicksand", sans-serif;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  background-color: var(--cyan);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 2.5% 0%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+  margin: 5% 0%;
+}
+
+#gallery_form {
+  margin-top: 10vh;
+}
+
+.row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  padding: 2.5% 0%;
+  background-color: var(--blue);
+  width: 100%;
+  text-align: center;
+}
+
+footer small {
+  font-family: "Nosifer", cursive;
+  color: var(--white);
+  text-align: center;
 }
