@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<!-- [NEED TO CHANGE lang] -->
-<html lang="your lang">
+<html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="[NEED TO CHANGE] your description">
-  <title>[NEED TO CHANGE] your title</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="regarder la météo">
+  <title>365 jour de soleil</title>
+  <script src="https://kit.fontawesome.com/e12df0ced7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <header>
+    <a href="https://lachainemeteo.com"><img src="./img/logo.svg" alt="logo"></a>
+    <h1>365 jours de soleil</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fa-fw fa-solid fa-cloud-sun"></i></a></li>
+      <li><a href="#"><i class="fa-fw fa-solid fa-water"></i></a></li>
+      <li><a href="#"><i class="fa-fw fa-solid fa-mountain"></i></a></li>
+      <li><a href="#"><i class="fa-fw fa-solid fa-earth-europe"></i></a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="forecast">
+      <h2>prévision à <span>8</span>jours</h2>
+      <ul id="forecasts">
+      </ul>
+    </section>
+    <aside>
+      <ul>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-triangle-exclamation"></i>vigilance</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-asia"></i>outre-mer</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-americas"></i>climat</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mountain"></i>montagne</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-water"></i>mer</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-umbrella-beach"></i>plages</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-africa"></i>animations</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-database"></i>open data</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-plus"></i>services</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mobile-alt"></i>mobile</a></li>
+        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-circle"></i>premium</a></li>
+      </ul>
+    </aside>
+    <div class="gallery"><img src="./img/certif-intemperies.png" alt=""><img src="./img/route_ete.jpg" alt=""><img
+        src="./img/route_neige.gif" alt=""><img src="./img/ephemeride.png" alt=""><img src="./img/printemps.jpg"
+        alt=""><img src="" alt="">
+    </div>
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 
