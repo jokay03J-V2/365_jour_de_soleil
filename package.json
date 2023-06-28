@@ -1,0 +1,17 @@
+{
+  "name": "template-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "w3c-validator check index.html -t"
+  },
+  "devDependencies": {
+    "sass": "^1.63.4",
+    "vite": "^4.3.9"
+  }
+}
+
