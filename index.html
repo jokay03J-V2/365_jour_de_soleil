@@ -25,9 +25,9 @@
   </header>
   <main>
     <hr>
-    <div class="row">
+    <div class="row" id="forecast_aside">
       <section class="forecast">
-        <h2>prévision à <span>8</span>jours</h2>
+        <h2>prévision à <span class="forecast-day-mobile">8</span><span class="forecast-day-desktop">10</span>jours</h2>
         <ul id="forecasts">
         </ul>
       </section>
@@ -47,14 +47,56 @@
         </ul>
       </aside>
     </div>
+    <div class="row" id="statements">
+      <section class="statements">
+        <h2>les relevés du jour</h2>
+        <table>
+          <thead class="statements-head">
+            <tr>
+              <th>ville</th>
+              <th>météo</th>
+              <th>min</th>
+              <th>max</th>
+            </tr>
+          </thead>
+          <tbody class="statements-body">
+            <tr>
+              <td>londre</td>
+              <td>pluvieux</td>
+              <td>10</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>madrid</td>
+              <td>voilé</td>
+              <td>10</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>berlin</td>
+              <td>nuagueux</td>
+              <td>10</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>lisbonne</td>
+              <td>ensoleillé</td>
+              <td>10</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <img src="./img/ephemeride.png" alt="ephemeride" class="ephemeride">
+    </div>
     <div class="row" id="gallery_form">
       <div class="gallery">
-        <img src="./img/printemps.jpg" alt="">
-        <img src="./img/route_ete.jpg" alt="">
-        <img src="./img/nuageux.jpg" alt="">
-        <img src="./img/Climadiag.jpg" alt="">
-        <img src="./img/route_neige.gif" alt="">
-        <img src="./img/certif-intemperies.png" alt="">
+        <img src="./img/printemps.jpg" alt="printemps">
+        <img src="./img/route_ete.jpg" alt="route été">
+        <img src="./img/nuageux.jpg" alt="nuageux">
+        <img src="./img/Climadiag.jpg" alt="climadiag">
+        <img src="./img/route_neige.gif" alt="route neige">
+        <img src="./img/certif-intemperies.png" alt="certif certif-intemperie">
       </div>
       <form action="#">
         <h2>abonnez-vous !</h2>
@@ -65,7 +107,7 @@
     </div>
   </main>
   <footer>
-    <small>that’s all folks, nearly finished</small>
+    <small>that's all folks, nearly finished</small>
   </footer>
   <script type="module" src="/main.js"></script>
 </body>
