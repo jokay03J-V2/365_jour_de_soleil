@@ -14,41 +14,58 @@
   <header>
     <a href="https://lachainemeteo.com"><img src="./img/logo.svg" alt="logo"></a>
     <h1>365 jours de soleil</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#"><i class="fa-fw fa-solid fa-cloud-sun"></i></a></li>
-      <li><a href="#"><i class="fa-fw fa-solid fa-water"></i></a></li>
-      <li><a href="#"><i class="fa-fw fa-solid fa-mountain"></i></a></li>
-      <li><a href="#"><i class="fa-fw fa-solid fa-earth-europe"></i></a></li>
-    </ul>
-  </nav>
-  <main>
-    <section class="forecast">
-      <h2>prévision à <span>8</span>jours</h2>
-      <ul id="forecasts">
-      </ul>
-    </section>
-    <aside>
+    <nav>
       <ul>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-triangle-exclamation"></i>vigilance</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-asia"></i>outre-mer</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-americas"></i>climat</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mountain"></i>montagne</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-water"></i>mer</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-umbrella-beach"></i>plages</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-africa"></i>animations</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-database"></i>open data</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-plus"></i>services</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mobile-alt"></i>mobile</a></li>
-        <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-circle"></i>premium</a></li>
+        <li class="nav-item"><a href="#"><i class="fa-fw fa-solid fa-cloud-sun"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fa-fw fa-solid fa-water"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fa-fw fa-solid fa-mountain"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fa-fw fa-solid fa-earth-europe"></i></a></li>
       </ul>
-    </aside>
-    <div class="gallery"><img src="./img/certif-intemperies.png" alt=""><img src="./img/route_ete.jpg" alt=""><img
-        src="./img/route_neige.gif" alt=""><img src="./img/ephemeride.png" alt=""><img src="./img/printemps.jpg"
-        alt=""><img src="" alt="">
+    </nav>
+  </header>
+  <main>
+    <div class="row">
+      <section class="forecast">
+        <h2>prévision à <span>8</span>jours</h2>
+        <ul id="forecasts">
+        </ul>
+      </section>
+      <aside>
+        <ul>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-triangle-exclamation"></i>vigilance</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-asia"></i>outre-mer</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-americas"></i>climat</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mountain"></i>montagne</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-water"></i>mer</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-umbrella-beach"></i>plages</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-globe-africa"></i>animations</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-database"></i>open data</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-plus"></i>services</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-mobile-alt"></i>mobile</a></li>
+          <li class="aside-item"><a href="#"><i class="fa-fw fa-solid fa-user-circle"></i>premium</a></li>
+        </ul>
+      </aside>
+    </div>
+    <div class="row" id="gallery_form">
+      <div class="gallery">
+        <img src="./img/printemps.jpg" alt="">
+        <img src="./img/route_ete.jpg" alt="">
+        <img src="./img/nuageux.jpg" alt="">
+        <img src="./img/Climadiag.jpg" alt="">
+        <img src="./img/route_neige.gif" alt="">
+        <img src="./img/certif-intemperies.png" alt="">
+      </div>
+      <form action="#">
+        <h2>abonnez-vous !</h2>
+        <p><span>recevez chaque jour</span><span>les prévisions de votre ville</span></p>
+        <input type="email" name="email" required placeholder="Votre adresse mail*">
+        <input type="submit" value="s'abonner">
+      </form>
     </div>
   </main>
+  <footer>
+    <small>that’s all folks, nearly finished</small>
+  </footer>
   <script type="module" src="/main.js"></script>
 </body>
 
