@@ -10,8 +10,6 @@
     "check": "w3c-validator check index.html -t"
   },
   "devDependencies": {
-    "sass": "^1.63.4",
     "vite": "^4.3.9"
   }
 }
-
