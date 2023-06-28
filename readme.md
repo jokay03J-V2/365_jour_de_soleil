@@ -1,5 +1,9 @@
 # vite template
 
+## note
+
+certaine taille on été modifier vu par jean sébastien
+
 ## Use
 
 click on "use this template"
